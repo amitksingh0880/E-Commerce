@@ -1,6 +1,13 @@
 import React from 'react'
 import Image from 'next/image';
-const Slide = ({img , title , mainTitle , price}) => {
+
+interface protoType {
+    img: string;
+    title: string;
+    mainTitle: string;
+    price: string;
+}
+const Slide: React.FC<protoType> = ({img , title , mainTitle , price}) => {
   return (
     <div className='outline-none border-none relative'>
         <div className='absolute left-[30px] md:left-[70px] max-w-[250px] sm:max-[350px] top-[50%] -translate-y-[50%] space-y-2 lg:space-y-4 bg-[#ffffffa2] sm:bg-transparent p-4 sm:p-0 rounded-lg sm:rounded-none'>

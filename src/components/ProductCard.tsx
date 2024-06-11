@@ -2,9 +2,17 @@ import Image from 'next/image'
 import React from 'react'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 
-const ProductCard = ({ price , desc , rating, img , title}) => {
+interface propsType {
+    price: string;
+    desc: string;
+    rating: number;
+    img: string;
+    title: string;
+}
 
-    const generateRating = ()=>{
+const ProductCard: React.FC<propsType> = ({ price , desc , rating, img , title}) => {
+
+    const generateRating = (rating: number)=>{
         switch(rating){
             case 1:
                 return(
