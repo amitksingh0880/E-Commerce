@@ -4,6 +4,14 @@ import HeaderTop from "../components/HeaderTop";
 import HeaderMain from "../components/HeaderMain";
 import Navbar from "../components/Navbar"
 import MobNavbar from "../components/MobNavbar";
+import Hero from "../components/Hero";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import NewProducts from "../components/NewProducts";
+import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,6 +27,10 @@ export default function RootLayout({ children }) {
         <HeaderMain/>
         <Navbar/>
         <MobNavbar/>
+        <Hero/>
+        <NewProducts/>
+        <Testimonials/>
+        <Footer/>
         {children}
       </body>
     </html>

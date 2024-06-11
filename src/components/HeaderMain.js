@@ -1,6 +1,7 @@
 import React from 'react'
-import {BsSearch } from "react-icons/bs"
+// import {BsSearch} from "react-icons/bs"
 import {BiUser} from "react-icons/bi"
+import { BsSearch } from "react-icons/bs"
 import {FiHeart} from "react-icons/fi"
 import {HiOutlineShoppingBag} from "react-icons/hi"
 const HeaderMain = () => {
